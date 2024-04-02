@@ -26,6 +26,12 @@
   .logo {
     font-size: 3.3rem;
     font-weight: var(--fw-700);
+    a {
+      h1 {
+        font-family: Josefin Sans;
+        font-weight: bolder;
+      }
+    }
   }
 
   .header-action {
