@@ -1,63 +1,3 @@
-.header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: var(--white);
-  padding-block: 15px;
-  z-index: 4;
-}
-.header .input-wrapper {
-  display: none;
-}
-.header .active {
-  position: fixed;
-  transform: translateY(-100%);
-  box-shadow: var(--shadow);
-  animation: slideIn 0.5s ease forwards;
-}
-.header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-}
-.header .logo {
-  font-size: 3.3rem;
-  font-weight: var(--fw-700);
-}
-.header .header-action {
-  display: flex;
-  gap: 15px;
-}
-.header .header-action .header-action-btn {
-  position: relative;
-  font-size: 24px;
-  transition: var(--transition-1);
-}
-.header .header-action .header-action-btn :is(:hover, :focus) {
-  color: var(--tan-crayola);
-}
-.header .header-action .btn-badge {
-  background-color: var(--tan-crayola);
-  color: var(--white);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-500);
-  position: absolute;
-  bottom: -10px;
-  right: -10px;
-  padding-inline: 6px;
-  border-radius: 50%;
-}
-
-@keyframes slideIn {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 *,
 *::before,
 *::after {
@@ -98,11 +38,9 @@ button {
 input {
   width: 100%;
 }
-
 button {
   cursor: pointer;
 }
-
 i {
   pointer-events: none;
 }
@@ -122,36 +60,36 @@ body {
   color: var(--black);
   font-size: 1.6rem;
   line-height: 1.7;
-  height: 500vh;
 }
 
-body .active {
-  overflow: hidden;
+body {
+  .active {
+    overflow: hidden;
+  }
 }
+
 
 :focus-visible {
   outline-offset: 4px;
 }
-
 ::placeholder {
   color: var(--manatee);
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-}
 
-::-webkit-scrollbar-track {
-  background-color: hsl(0, 0%, 98%);
-}
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: hsl(0, 0%, 98%);
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: hsl(0, 0%, 80%);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(0, 0%, 70%);
+  }
 
-::-webkit-scrollbar-thumb {
-  background-color: hsl(0, 0%, 80%);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: hsl(0, 0%, 70%);
-}
 
 :root {
   /**colors**/
@@ -170,28 +108,36 @@ body .active {
   --manatee: hsl(218, 11%, 65%);
   --black: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
+
   /**typography**/
+
   --ff-roboto: "Roboto", sans-serif;
   --ff-mr_de_haviland: "Mr De Haviland", cursive;
+
   --fs-1: 6rem;
   --fs-2: 3rem;
   --fs-3: 2rem;
   --fs-4: 1.8rem;
   --fs-5: 1.4rem;
   --fs-6: 1.2rem;
+
   --fw-700: 700;
   --fw-500: 500;
+
   /**typography**/
   --ff-roboto: "Roboto", sans-serif;
   --ff-mr_de_haviland: "Mr De Haviland", cursive;
+
   --fs-1: 6rem;
   --fs-2: 3rem;
   --fs-3: 2rem;
   --fs-4: 1.8rem;
   --fs-5: 1.4rem;
   --fs-6: 1.2rem;
+
   --fw-700: 700;
   --fw-500: 500;
+
   /**Spacing**/
   --section-padding: 50px;
   /**Shadow**/
@@ -202,5 +148,3 @@ body .active {
   --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
   --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
 }
-
-/*# sourceMappingURL=style.css.map */

@@ -26,20 +26,40 @@
 </head>
 
 <body>
-<header class="header">
-    <div class="container">
-        <input type="shearch" name="shearch" placeholder="¿Que estas buscando?" class="input-field">
-        <i class="fa-solid fa-magnifying-glass"></i>
-    </div>
-    <a href="" class="logo"><img src="img/logo.png" alt="logo" width="90" height="90"></a>
-</header>
+    <header class="header active" data-header>
+        <div class="container">
+            <div class="input-wrapper">
+                <input type="shearch" name="shearch" placeholder="¿Que estas buscando?" class="input-field">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </div>
+            <a href="index.html" class="logo">Woodex</a>
+
+            <div class="header-action">
+                <button class="header-action-btn" aria-label="user"><i class="fa-solid fa-user"
+                        aria-hidden="true"></i></button>
+
+                <button class="header-action-btn" aria-label="favorite list"><i class="fa-solid fa-heart"></i><span
+                        class="btn-badge">0</span>
+                </button>
+
+
+                <button class="header-action-btn" aria-label="cart"><i class="fa-solid fa-cart-shopping"></i><span
+                        class="btn-badge">0</span>
+                    </i></button>
+
+
+                <button class="header-action-btn" aria-label="menu"><i class="fa-solid fa-bars"></i></i></button>
+            </div>
+        </div>
+    </header>
 
 
 
 
-
-
-
+    <script src="js/script.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

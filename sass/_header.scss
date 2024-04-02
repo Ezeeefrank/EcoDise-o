@@ -1,0 +1,66 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--white);
+  padding-block: 15px;
+  z-index: 4;
+  .input-wrapper {
+    display: none;
+  }
+  .active {
+    position: fixed;
+    transform: translateY(-100%);
+    box-shadow: var(--shadow);
+    animation: slideIn 0.5s ease forwards;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .logo {
+    font-size: 3.3rem;
+    font-weight: var(--fw-700);
+  }
+
+  .header-action {
+    display: flex;
+    gap: 15px;
+
+    .header-action-btn {
+      position: relative;
+      font-size: 24px;
+      transition: var(--transition-1);
+
+      :is(:hover, :focus) {
+        color: var(--tan-crayola);
+      }
+    }
+
+    .btn-badge {
+      background-color: var(--tan-crayola);
+      color: var(--white);
+      font-size: var(--fs-6);
+      font-weight: var(--fw-500);
+      position: absolute;
+      bottom: -10px;
+      right: -10px;
+      padding-inline: 6px;
+      border-radius: 50%;
+    }
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
