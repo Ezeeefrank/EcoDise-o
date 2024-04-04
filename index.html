@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-<link rel="shortcut icon" href="img/logo.png" type="image/x-icon">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Woodex</title>
@@ -18,6 +19,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="preload" as="image" href="img/hero-product-1.jpg">
+    <link rel="preload" as="image" href="img/hero-product-2.jpg">
+    <link rel="preload" as="image" href="img/hero-product-3.jpg">
+    <link rel="preload" as="image" href="img/hero-product-4.jpg">
+    <link rel="preload" as="image" href="img/hero-product-5.jpg">
+
+
+
 </head>
 
 <body>
@@ -98,7 +108,7 @@
                 </li>
 
 
-                
+
 
             </ul>
 
@@ -178,7 +188,123 @@
 
 
 
+    <main>
+        <article>
+            <section class="section hero" id="home" aria-label="home">
+                <div class="container">
+                    <ul class="hero-list">
 
+                        <li>
+                            <div class="hero-card">
+                                <figure class="card-banner img-holder" style="--width:285; --height: 396;">
+                                    <img src="img/hero-product-1.jpg" alt="Art Deco Home" width="285" height="396"
+                                        class="img-cover">
+                                </figure>
+                                <div class="card-content">
+                                    <h3>
+                                        <a href="" class="card-title">Art Deco Home</a>
+                                    </h3>
+                                    <p class="card-text">Decoration</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="clospan-2">
+                            <div class="hero-card">
+                                <figure class="card-banner img-holder" style="--width:586; --height: 389;">
+                                    <img src="img/hero-product-2.jpg" alt="Helen Chair" width="586" height="389"
+                                        class="img-cover">
+                                </figure>
+                                <div class="card-content">
+                                    <h3>
+                                        <a href="" class="card-title">Helen Chair</a>
+                                    </h3>
+                                    <p class="card-text">Decoration</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="clospan-2">
+                            <div class="hero-card">
+                                <figure class="card-banner img-holder" style="--width:285; --height: 396;">
+                                    <img src="img/hero-product-3.jpg" alt="Vase of Flowers" width="285" height="396"
+                                        class="img-cover">
+                                </figure>
+                                <div class="card-content">
+                                    <h3>
+                                        <a href="" class="card-title">Vase of Flowers</a>
+                                    </h3>
+                                    <p class="card-text">Decoration</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="clospan-2">
+                            <div class="hero-card">
+                                <figure class="card-banner img-holder" style="--width: 580; --height: 213;">
+                                    <img src="img/hero-product-4.jpg" alt="Wood Eggs" width="580" height="213"
+                                        class="img-cover">
+                                </figure>
+                                <div class="card-content">
+                                    <h3>
+                                        <a href="" class="card-title">Wood Eggs</a>
+                                    </h3>
+                                    <p class="card-text">Decoration</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="clospan-2">
+                            <div class="hero-card">
+                                <figure class="card-banner img-holder" style="--width: 580; --height: 213;">
+                                    <img src="img/hero-product-5.jpg" alt="Table Wood Pines" width="580" height="213"
+                                        class="img-cover">
+                                </figure>
+                                <div class="card-content">
+                                    <h3>
+                                        <a href="" class="card-title">Table Wood Pines</a>
+                                    </h3>
+                                    <p class="card-text">Furniture</p>
+                                </div>
+                            </div>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="section about" id="about" aria-label="about">
+                <div class="container">
+                    <h2 class="section-title">Woodex Store</h2>
+                    <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corrupti
+                        asperiores dolor, quae
+                        animi eum, culpa tempora eius quis nulla unde porro eaque est fugiat! Minima repellat nisi
+                        reprehenderit fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam
+                        delectus sint molestiae est facere modi necessitatibus mollitia ratione quasi earum consequatur
+                        autem deleniti, fuga, maiores consectetur itaque exercitationem corporis.</p>
+                </div>
+
+                <div class="about-card">
+                    <figure class="card-banner img-holder" style="--width: 1170 ; --height: 450;">
+                        <img class="img-cover" src="img/about-banner.jpg" alt="Woodex Promo" width="1170" height="450"
+                            loading="lazy">
+                    </figure>
+
+                    <button class="play-btn" aria-label="play-video"><ion-icon name="play-circle-outline"
+                            aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+            </section>
+
+
+
+
+
+        </article>
+    </main>
 
 
 
