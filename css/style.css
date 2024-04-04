@@ -61,13 +61,6 @@
 }
 
 
-
-
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
-
 *,
 *::before,
 *::after {
@@ -204,6 +197,7 @@ body.active {
 .logo {
   font-size: 3.3rem;
   font-weight: var(--fw-700);
+  font-family: Josefin Sans;
 }
 
 .header-action {
@@ -233,13 +227,6 @@ body.active {
   border-radius: 50%;
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #SIDEBAR
-\*-----------------------------------*/
 
 .sidebar {
   position: fixed;
@@ -335,3 +322,24 @@ body.active {
   opacity: 1;
   pointer-events: all;
 }
+
+.social-wrapper .social-link {
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.social-list {
+  display: flex;
+  gap: 30px;
+}
+
+.social-link {
+  transition: var(--transition-1);
+}
+
+.social-link:hover {
+  color: var(--tan-crayola);
+}
+
