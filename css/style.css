@@ -24,8 +24,6 @@
    * typography
    */
 
-  --ff-roboto: 'Roboto', sans-serif;
-  --ff-mr_de_haviland: 'Mr De Haviland', cursive;
 
   --fs-1: 6rem;
   --fs-2: 3rem;
@@ -115,7 +113,7 @@ address {
 }
 
 html {
-  font-family: var(--ff-roboto);
+  font-family: Roboto;
   font-size: 10px;
   scroll-behavior: smooth;
 }
@@ -195,9 +193,9 @@ body.active {
 }
 
 .logo {
-  font-size: 3.3rem;
+  font-size: 5rem;
   font-weight: var(--fw-700);
-  font-family: Josefin Sans;
+  font-family: Poiret One;
 }
 
 .header-action {
@@ -406,7 +404,7 @@ body.active {
   position: relative;
 }
 
-.hero-card .img-cover {
+.hero-card a .img-cover {
   transition: var(--transition-2);
 }
 
@@ -414,41 +412,23 @@ body.active {
   transform: scale(1.1);
 }
 
-.hero-card .card-content {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  right: 30px;
-}
-
-.hero-card :is(.card-title, .card-text) {
-  font-weight: var(--fw-500);
-}
-
-.hero-card .card-title {
-  font-size: var(--fs-3);
-  transition: var(--transition-1);
-}
-
-.hero-card .card-title:is(:hover, :focus) {
-  color: var(--tan-crayola);
-}
 
 .about {
   text-align: center;
 }
 
 .about .section-title {
-  font-family: Josefin Sans;
-  font-size: var(--fs-1);
-  font-weight: var(--fw-500);
+  font-family: Poiret One;
+  font-size: 5rem;
+  font-weight: var(--fw-700);
 }
 
 .about .section-text {
-  margin-block: 12px 45px;
+  margin-block: 20px 50px;
 }
 
 .about-card {
+  padding-top: 50px;
   position: relative;
 }
 
@@ -537,7 +517,9 @@ body.active {
 .product-card .card-action-btn {
   background-color: var(--white);
   font-size: 22px;
-  padding: 12px;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   transition: var(--transition-1);
 }
@@ -556,8 +538,8 @@ body.active {
   color: var(--white);
   font-size: var(--fs-5);
   font-weight: var(--fw-500);
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   line-height: 45px;
   margin-block-end: 10px;
@@ -613,7 +595,7 @@ body.active {
 }
 
 .product-list[data-filter="all"]>*,
-.product-list[data-filter="accesory"]>.accesory .product-list[data-filter="decoration"]>.decoration .product-list[data-filter="furniture"]>.furniture {
+.product-list[data-filter="Sillas"]>.Sillas .product-list[data-filter="Escritorios"]>.Escritorios .product-list[data-filter="Cocina"]>.Cocina {
   display: block;
   animation: fadeUp 1s ease forwards;
 }
@@ -916,7 +898,9 @@ body.active {
    * REUSED STYLE
    */
 
-  .container { max-width: 768px; }
+  .container {
+    max-width: 768px;
+  }
 
 
 
@@ -924,9 +908,13 @@ body.active {
    * HEADER
    */
 
-  .header-action { gap: 35px; }
+  .header-action {
+    gap: 35px;
+  }
 
-  .header .input-wrapper { width: 200px; }
+  .header .input-wrapper {
+    width: 200px;
+  }
 
 
 
@@ -939,7 +927,9 @@ body.active {
     gap: 10px;
   }
 
-  .hero-list .colspan-2 { grid-column: span 2; }
+  .hero-list .colspan-2 {
+    grid-column: span 2;
+  }
 
 
 
@@ -947,7 +937,9 @@ body.active {
    * ABOUT
    */
 
-  .about .section-text { margin-block-end: 75px; }
+  .about .section-text {
+    margin-block-end: 75px;
+  }
 
 
 
@@ -962,7 +954,9 @@ body.active {
     margin-block-end: 80px;
   }
 
-  .filter-btn-list { margin: 0; }
+  .filter-btn-list {
+    margin: 0;
+  }
 
 
 
@@ -970,7 +964,9 @@ body.active {
    * NEWSLETTER
    */
 
-  .newsletter-card { padding: 50px 70px; }
+  .newsletter-card {
+    padding: 50px 70px;
+  }
 
 }
 
@@ -988,11 +984,17 @@ body.active {
    * REUSED STYLE
    */
 
-  .container { max-width: 992px; }
+  .container {
+    max-width: 992px;
+  }
 
-  .grid-list > li:last-child { all: unset; }
+  .grid-list>li:last-child {
+    all: unset;
+  }
 
-  .grid-list { grid-template-columns: repeat(3, 1fr); }
+  .grid-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
 
 
@@ -1000,7 +1002,9 @@ body.active {
    * HERO
    */
 
-  .hero-card .card-title { --fs-3: 2.2rem; }
+  .hero-card .card-title {
+    --fs-3: 2.2rem;
+  }
 
 
 
@@ -1019,7 +1023,9 @@ body.active {
    * NEWSLETTER
    */
 
-  .newsletter { --section-padding: 50px; }
+  .newsletter {
+    --section-padding: 50px;
+  }
 
   .newsletter-card {
     display: grid;
@@ -1028,7 +1034,9 @@ body.active {
     gap: 40px;
   }
 
-  .newsletter-card .card-content { margin-block-end: 0; }
+  .newsletter-card .card-content {
+    margin-block-end: 0;
+  }
 
 
 
@@ -1068,11 +1076,15 @@ body.active {
   }
 
 
-  .container { max-width: 1200px; }
+  .container {
+    max-width: 1200px;
+  }
 
 
 
 
-  .product-list { grid-template-columns: repeat(4, 1fr); }
+  .product-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
 }
