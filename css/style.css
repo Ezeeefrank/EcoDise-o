@@ -614,7 +614,7 @@ body.active {
 }
 
 .product-list[data-filter="all"]>*,
-.product-list[data-filter="Sillas"]>.Sillas .product-list[data-filter="Escritorios"]>.Escritorios .product-list[data-filter="Cocina"]>.Cocina {
+.product-list[data-filter="Sillas"]>.Sillas .product-list[data-filter="Escritorios"]>.Escritorios .product-list[data-filter="Productos para La Cocina"]>.Cocina {
   display: block;
   animation: fadeUp 1s ease forwards;
 }
@@ -791,6 +791,20 @@ body.active {
   transform: translateY(-10px);
 }
 
+.blog .locacion {
+  padding-top: 50px;
+  position: relative;
+}
+
+.blog .locacion iframe {
+  max-width: 100%;
+  height: 550;
+}
+
+
+/** MEDIA QUERIES **/
+
+
 @media (min-width: 575px) {
 
   .container {
@@ -811,7 +825,6 @@ body.active {
     margin-inline: auto;
   }
 
-
   .header .container {
     gap: 35px;
   }
@@ -829,7 +842,7 @@ body.active {
     transition: var(--transition-1);
   }
 
-  .header .input-field::-webkit-shearch-cancel-button {
+  .header .input-field::-webkit-search-cancel-button {
     display: none;
   }
 
@@ -837,17 +850,18 @@ body.active {
     border-block-end-color: var(--tan-crayola);
   }
 
-  .header .input-wrapper .ion-icon {
+  .header .input-wrapper ion-icon {
     position: absolute;
-    top: 505;
+    top: 50%;
     right: 0;
-    transform: translateY(-50);
+    transform: translateY(-50%);
     font-size: 24px;
   }
 
   .header-action {
-    gap: 35px;
+    gap: 25px;
   }
+
 
   .newsletter {
     background: none;
@@ -856,30 +870,22 @@ body.active {
   .newsletter-card {
     background-color: var(--cultured);
     padding: 20px 30px;
-
   }
+
 
   .footer-top {
     grid-template-columns: 1fr 1fr;
   }
-}
 
+}
 
 @media (min-width: 768px) {
 
-  /**
-   * REUSED STYLE
-   */
 
   .container {
     max-width: 768px;
   }
 
-
-
-  /**
-   * HEADER
-   */
 
   .header-action {
     gap: 35px;
@@ -889,11 +895,6 @@ body.active {
     width: 200px;
   }
 
-
-
-  /**
-   * HERO
-   */
 
   .hero-list {
     grid-template-columns: repeat(4, 1fr);
@@ -905,20 +906,9 @@ body.active {
   }
 
 
-
-  /**
-   * ABOUT
-   */
-
   .about .section-text {
     margin-block-end: 75px;
   }
-
-
-
-  /**
-   * PRODUCT
-   */
 
   .product .title-wrapper {
     display: flex;
@@ -931,12 +921,6 @@ body.active {
     margin: 0;
   }
 
-
-
-  /**
-   * NEWSLETTER
-   */
-
   .newsletter-card {
     padding: 50px 70px;
   }
@@ -944,18 +928,7 @@ body.active {
 }
 
 
-
-
-
-/**
- * responsive for large than 992px screen
- */
-
 @media (min-width: 992px) {
-
-  /**
-   * REUSED STYLE
-   */
 
   .container {
     max-width: 992px;
@@ -970,31 +943,16 @@ body.active {
   }
 
 
-
-  /**
-   * HERO
-   */
-
   .hero-card .card-title {
     --fs-3: 2.2rem;
   }
 
-
-
-  /**
-   * ABOUT
-   */
 
   .about .section-text {
     max-width: 85ch;
     margin-inline: auto;
   }
 
-
-
-  /**
-   * NEWSLETTER
-   */
 
   .newsletter {
     --section-padding: 50px;
@@ -1012,11 +970,6 @@ body.active {
   }
 
 
-
-  /**
-   * FOOTER
-   */
-
   .footer-top {
     grid-template-columns: 1fr 0.75fr 0.6fr 1fr;
     padding-block-end: 60px;
@@ -1024,25 +977,11 @@ body.active {
 
 }
 
-
-
-
-
-/**
- * responsive for large than 1200px screen
- */
-
 @media (min-width: 1200px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
 
   :root {
 
-    /**
-     * typography
-     */
 
     --fs-2: 3.6rem;
 
@@ -1052,8 +991,6 @@ body.active {
   .container {
     max-width: 1200px;
   }
-
-
 
 
   .product-list {
